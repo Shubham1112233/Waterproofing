@@ -1,0 +1,82 @@
+/* Overall styling for the section */
+.estimate-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 2px solid #ddd; /* Border around the entire section */
+}
+
+/* Styling for the content section (left side) */
+.content-section {
+  border: 2px solid #ddd;
+  padding: 30px;
+  background-color: white;
+  margin-right: 20px;
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+}
+
+/* WhatsApp number styling */
+.whatsapp-number a {
+  color: #25d366;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Styling for the form section (right side) */
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Card-like styling for the form */
+.form-wrapper {
+  border: 2px solid #ddd; /* Border around the form */
+  padding: 40px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow */
+  border-radius: 8px; /* Rounded corners */
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Form element styling */
+.form-label {
+  font-weight: bold;
+}
+
+/* Button styling */
+.btn-primary {
+  width: 100%;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .estimate-section {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .content-section {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .form-wrapper {
+    width: 100%;
+  }
+}

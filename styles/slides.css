@@ -1,0 +1,65 @@
+/* Overall styling for the section */
+.services-section {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+}
+
+.service-box {
+  position: relative;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  height: 400px; /* Adjust the height as needed */
+}
+
+.service-content {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  right: 20px;
+}
+
+.service-box h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.service-box h4 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.service-box p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Set different background images for each service box */
+.service-box:nth-child(1) {
+  background-image: url("../assets/water1.jpg");
+}
+
+.service-box:nth-child(2) {
+  background-image: url("../assets/water1.jpg");
+}
+
+.service-box:nth-child(3) {
+  background-image: url("../assets/waterproofing.jpg");
+}
+
+.service-box:nth-child(4) {
+  background-image: url("../assets/waterproofing.jpg");
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+  .service-box {
+    height: 300px;
+  }
+
+  .service-content {
+    bottom: 20px;
+  }
+}

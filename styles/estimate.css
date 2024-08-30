@@ -1,0 +1,45 @@
+.estimate {
+  height: 400px; /* Fixed height of 400px */
+  background-color: #0a1a2b; /* Optional: Set background color */
+  color: #ffffff; /* Text color */
+  display: flex; /* Use Flexbox for centering */
+  flex-direction: column; /* Align items in a column */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center text */
+  padding: 0 20px; /* Optional: Add some padding */
+}
+
+.estimate h2 {
+  font-size: 36px; /* Font size for heading */
+  margin-bottom: 15px; /* Space below the heading */
+}
+
+.estimate p {
+  font-size: 18px; /* Font size for paragraph */
+  margin-bottom: 20px; /* Space below the paragraph */
+}
+
+.btn-custom {
+  background-color: #d9534f; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Button padding */
+  margin: 5px; /* Space between buttons */
+}
+
+.btn-custom:hover {
+  background-color: #c9302c; /* Button hover color */
+}
+
+.btn-outline-light {
+  border: 2px solid #ffffff; /* Button border */
+  color: #ffffff; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  margin: 5px; /* Space between buttons */
+}
+
+.btn-outline-light:hover {
+  background-color: #ffffff; /* Button hover background color */
+  color: #0a1a2b; /* Button hover text color */
+}

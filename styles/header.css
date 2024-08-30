@@ -1,0 +1,35 @@
+header {
+  background-color: #f0f0f0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.contact-info {
+  font-size: 14px;
+}
+
+nav {
+  background-color: #333;
+}
+nav .navbar-nav {
+  margin: 0 auto; /* Centering the nav items */
+}
+nav .navbar-nav .nav-link {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav .navbar-nav .nav-link:hover {
+  background-color: #111;
+}
+.navbar-brand-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 40px; /* Adjust the width as needed */
+  height: auto;
+  margin-right: 10px; /* Adjust spacing between logo and text */
+}
