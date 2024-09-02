@@ -1,4 +1,46 @@
 document.addEventListener("DOMContentLoaded", function () {
+  emailjs.init("shubhekkaldevi@gmail.com");
+  console.log("EmailJS initialized with userID:", "shubhekkaldevi@gmail.com");
+
+  function sendEmail() {
+    var email = document.getElementById("email").value;
+
+    if (validateEmail(email)) {
+      // Prepare the email data
+      var templateParams = {
+        user_email: email,
+      };
+
+      // Send email using EmailJS
+      emailjs.send("service_qgp03tm", "template_p4shi02", templateParams).then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+          document.getElementById("responseMessage").innerText =
+            "Brochure has been sent to " + email;
+          document.getElementById("responseMessage").style.color = "green";
+        },
+        function (error) {
+          console.log("FAILED...", error);
+          document.getElementById("responseMessage").innerText =
+            "Failed to send the brochure. Please try again.";
+          document.getElementById("responseMessage").style.color = "red";
+        }
+      );
+    } else {
+      document.getElementById("responseMessage").innerText =
+        "Please enter a valid email address.";
+      document.getElementById("responseMessage").style.color = "red";
+    }
+  }
+
+  function validateEmail(email) {
+    var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+  }
+
+  // Attach the sendEmail function to the global window object
+  window.sendEmail = sendEmail;
+
   const scrollLinks = document.querySelectorAll("a.nav-link");
 
   // Smooth scrolling for all nav links
