@@ -1,0 +1,25 @@
+.partners-section {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+  text-align: center;
+}
+.partners-section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+.partner-logo {
+  padding: 20px;
+  margin: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.partner-logo:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.partner-logo img {
+  max-width: 100%;
+  height: auto;
+}
