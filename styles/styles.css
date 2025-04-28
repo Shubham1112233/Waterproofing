@@ -1,44 +1,39 @@
-@import url("header.css");
-@import url("welcome.css");
-@import url("contact.css");
-@import url("slides.css");
-@import url("whyUs.css");
-@import url("footer.css");
+@import url("opening-carousel.css");
 @import url("estimate.css");
-@import url("partners.css");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("image-grid.css");
+@import url("whyyus.css");
+@import url("clients.css");
+@import url("counter.css");
+@import url("dropmessage.css");
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Navbar Styles */
+#Navigation-bar {
+  z-index: 100; /* Ensure navbar stays above other content, Bootstrap's default is 1030, sticky-top uses 1020 */
+  width: 100%;
+  min-height: 60px;
+  background-color: transparent; /* Light blue with 30% opacity */
 }
 
-.counter-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
-  gap: 20px; /* Space between items */
-  padding: 20px;
-  background-color: #f9f9f9; /* Light background color for contrast */
-  border-radius: 8px; /* Rounded corners for a modern look */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+#Navigation-bar a {
+  color: white; /* Make links white */
 }
 
-.counter-container {
-  text-align: center;
-  flex: 1 1 200px; /* Allows items to grow and shrink, with a base width of 200px */
+.our-clients-section .client-logo-card img {
+  max-height: 80px;
+  object-fit: contain;
 }
 
-.counter {
-  font-size: 48px;
-  font-weight: bold;
-  color: #333;
+.photo-gallery .gallery-img-wrapper {
+  overflow: hidden;
+  border-radius: 10px;
 }
 
-.counter-label {
-  font-size: 18px;
-  color: #666;
+.photo-gallery .gallery-img {
+  transition: transform 0.4s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.photo-gallery .gallery-img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.1);
 }

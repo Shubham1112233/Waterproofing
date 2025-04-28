@@ -1,0 +1,36 @@
+.contact-section {
+  /* Use your background image */
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  color: white;
+}
+
+.contact-section .container {
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Dark overlay for readability */
+  padding: 30px;
+  border-radius: 10px;
+}
+
+#drop-message .btn-primary {
+  background-color: #00aaff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+#drop-message .btn-primary:hover {
+  background-color: #0088cc;
+}
+
+#drop-message .form-control {
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+#drop-message .form-control:focus {
+  border-color: #00aaff;
+  box-shadow: none;
+}

@@ -3,442 +3,928 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tirumala Services</title>
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <link
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <title>Tirumala Enterprises</title>
   </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <!-- Logo and Navbar Brand -->
-        <div class="navbar-brand-container">
-          <img src="./assets/logoo.jpg" alt="Logo" class="navbar-logo" />
-          <a class="navbar-brand" href="#">Tirmuala Services</a>
-        </div>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-        <!-- Navbar Toggler Button -->
+  <body>
+    <nav
+      class="navbar navbar-expand-md position-absolute top-0"
+      id="Navigation-bar"
+    >
+      <div class="container-fluid">
         <button
           class="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <!-- Navbar Links -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#who-we-are">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#our-services">Our Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#our-customers">Our Customers</a>
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#home-section"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#whyUs">Why Us?</a>
+              <a class="nav-link" href="#services-section">Services</a>
             </li>
-            
             <li class="nav-item">
-              <a class="nav-link" href="#contact-us">Contact Us</a>
+              <a class="nav-link" href="#about-section">About Us</a>
             </li>
-
-            <li class="nav-item ml-4">
-                <button class="btn btn-primary btn-lg animated-btn" onclick="window.location.href='#get-a-estimate'">Get a free Estimate!</button>
+            <li class="nav-item">
+              <a class="nav-link" href="#clients-section">Clients</a>
             </li>
-
+            <li class="nav-item">
+              <a class="nav-link" href="#partners-section">Partners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery-section">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-section">Contact</a>
+            </li>
           </ul>
+          <a
+            href="#estimate-section"
+            class="btn btn-outline-secondary white-border"
+          >
+            Get an estimate
+          </a>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
 
-    <main>
-      <section class="welcome">
-        <div class="welcome-content">
-          <div class="textofwelcome">
-            <h1>Welcome to Tirumala Services</h1>
-            <div class="h3-welcome">
-            <h3 >
-                your trusted partner in waterproofing and coating solutions. We specialize in revitalizing spaces with advanced waterproofing techniques, including PU, acrylic, polymer coatings, and HDPE, APP, and SBS membranes. We also offer traditional waterproofing solutions to safeguard your structures for years to come.            
-            </h3>
-            </div>
-            <button id="read-more-btn">Read More</button>
+    <section class="homepage-carousel" id="home-section">
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./assets/blue-wall-with-red-sofa.jpg"
+              class="d-block w-100 carousel-image-item"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/green-plant-green-living-room-with-copy-space.jpg"
+              class="d-block w-100 carousel-image-item"
+              alt="..."
+            />
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="welcome1">
-        <!-- replace with your image URL -->
-        <div class="welcome-text">
-          <h1>20+ YEARS OF EXPERIENCE</h1>
+      <div class="carousel-overlay">
+        <div
+          class="innertext-carousel d-flex justify-content-center align-items-start flex-column"
+        >
+          <h5 class="mb-0">The complete waterproofing solution</h5>
+          <h1>Tirumala Enterprises</h1>
+          <h2>Where Protection Meets Precision</h2>
           <p>
-                At Tirumala Services, we bring over two decades of expertise in providing top-quality waterproofing and coating solutions. From advanced polymer coatings to traditional waterproofing methods, our dedicated team ensures durable protection and revitalization of your spaces. Trust our experience to safeguard your structures for years to come.          </p>
+            With over 10 years of experience in the waterproofing industry, we
+            specialize in sealing homes and buildings against leaks, moisture,
+            and damage. Our commitment to quality and durability ensures your
+            space stays dry, safe, and strong—season after season.
+          </p>
+          <div class="carousel-buttons d-flex justify-content-between">
+            <a href="#contact-section" class="btn btn-primary">Get in touch</a>
+            <button class="btn btn-primary">Company Profile</button>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="estimate-section" class="estimate-section">
-        <div class="container-fluid">
-          <div class="row">
-            <!-- Left Side Content -->
-            <div class="col-md-6 content-section">
-              <h2>Your Trusted Construction Services Provider</h2>
+    <section class="estimate" id="estimate-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-12 inline-left">
+            <div class="content">
+              <h1>Your Trusted Waterproofing Solutions Provider</h1>
               <p>
-                From the initial consultation to project completion, we work
-                closely with our clients to ensure seamless execution and
-                unparalleled results.
+                From consultation to final application, we work closely with our
+                clients to deliver seamless and effective waterproofing
+                solutions. With over 10 years of expertise, we ensure
+                long-lasting protection against leaks and moisture damage. Our
+                passion for quality and precision drives us to safeguard homes,
+                buildings, and structures with tailored solutions that stand the
+                test of time.
               </p>
-              <p>
-                Welcome to Bright Castle Group, where our passion for
-                construction fuels our commitment to excellence. With 12 years
-                of experience in the industry, we've built a reputation for
-                delivering top-notch construction solutions tailored to our
-                clients’ needs.
-              </p>
-              <p>
-                <strong>WhatsApp no.</strong>
-              </p>
-              <p class="whatsapp-number">
-                <a href="https://wa.me/917559179180">+91 86000 03819</a><br />
-              </p>
+              <div
+                class="whatsapp d-flex justify-content-start align-items-center"
+              >
+                <div class="contact-number me-3">
+                  <a href="tel:+91 8600003819">+91 8600003819</a>
+                </div>
+                <div class="contact-icons d-flex gap-2">
+                  <div class="icon-container me-2">
+                    <a href="tel:+91 8600003819">
+                      <i class="bi bi-telephone-fill fs-4"></i>
+                    </a>
+                  </div>
+                  <div class="icon-container">
+                    <a
+                      href="https://wa.me/918600003819"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <img
+                        src="./assets/whatsapp.svg"
+                        alt="Whatsapp logo"
+                        width="24"
+                        height="24"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form class="form-feedback" id="contact-form">
+            <h3 class="mb-4">Request a Estimate</h3>
+
+            <div class="mb-2">
+              <label for="exampleInputName" class="form-label">Full Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputName"
+                name="name"
+                placeholder="Enter your full name"
+              />
             </div>
 
-            <!-- Right Side Form -->
-            <div class="col-md-3 form-section">
-              <div class="form-wrapper">
-                <h3>Request a Free Estimate</h3>
-                <form>
-                  <div class="mb-3">
-                    <label for="fullName" class="form-label">
-                      Full Name*
-                    </label>
+            <div class="mb-2">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                name="email"
+                placeholder="Enter your email address"
+              />
+            </div>
+
+            <div class="mb-2">
+              <label for="exampleInputPhone" class="form-label"
+                >Phone number</label
+              >
+              <input
+                type="tel"
+                class="form-control"
+                id="exampleInputPhone"
+                name="phone"
+                placeholder="Enter your phone number"
+              />
+            </div>
+
+            <div class="mb-2">
+              <label for="exampleInputSubject" class="form-label"
+                >Subject</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputSubject"
+                name="subject"
+                placeholder="Enter the subject"
+              />
+            </div>
+
+            <div class="mb-2">
+              <label for="exampleTextarea" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="exampleTextarea"
+                name="message"
+                rows="4"
+                placeholder="Write your message"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="image-grid" id="services-section">
+      <div class="services-heading">
+        <h2>Our Services</h2>
+      </div>
+
+      <div class="container">
+        <div class="grid-container">
+          <!-- Card 1 -->
+          <div class="image-grid-card">
+            <div class="img-card">
+              <img
+                src="./assets/industrial-waterproofing.jpeg"
+                alt="Swimming Pool Waterproofing"
+                class="card-img"
+              />
+            </div>
+            <div class="card-content">
+              <h4>Industrial Waterproofing</h4>
+              <div class="divider-line"></div>
+              <p>
+                It involves specialized systems designed to protect large-scale
+                structures such as factories, warehouses, and plants from water
+                ingress, chemical exposure, and environmental stress. These
+                solutions are tailored to withstand heavy usage, structural
+                movement, and harsh conditions, ensuring long-term durability
+                and performance.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="image-grid-card">
+            <div class="img-card">
+              <img
+                src="./assets/basement.jpeg"
+                alt="Basement Waterproofing"
+                class="card-img"
+              />
+            </div>
+            <div class="card-content">
+              <h4>Basement Waterproofing</h4>
+              <div class="divider-line"></div>
+              <p>
+                It is essential to protect below-ground structures from water
+                ingress, soil pressure, and harsh environmental conditions. We
+                use advanced systems like HDPE and SBS modified bitumen
+                membranes that offer high durability, flexibility, and chemical
+                resistance. These materials create a robust barrier against
+                moisture while accommodating thermal movement and soil shifts,
+                making them ideal for both deep basements and complex structural
+                foundations.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="image-grid-card">
+            <div class="img-card">
+              <img
+                src="./assets/Pucoating.jpeg"
+                alt="PU Coating for Podium"
+                class="card-img"
+              />
+            </div>
+            <div class="card-content">
+              <h4>PU Coating for Podium</h4>
+              <div class="divider-line"></div>
+              <p>
+                Podium waterproofing requires a seamless, flexible coating to
+                withstand structural movement and prevent water penetration,
+                ensuring long-term durability. It also helps in protecting the
+                surface from UV exposure, mechanical wear, and environmental
+                stress.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="image-grid-card">
+            <div class="img-card">
+              <img
+                src="./assets/sunken.jpeg"
+                alt="Sunken Area Waterproofing"
+                class="card-img"
+              />
+            </div>
+            <div class="card-content">
+              <h4>Sunken Area Waterproofing Using Fast Flex</h4>
+              <div class="divider-line"></div>
+              <p>
+                Sunken areas like bathrooms and kitchens are highly prone to
+                water leakage due to constant moisture exposure, making proper
+                waterproofing essential. Using fast-curing compounds ensures
+                quicker turnaround and reliable sealing of hidden joints and
+                corners.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="image-grid-card">
+            <div class="img-card">
+              <img
+                src="./assets/terrace.jpeg"
+                alt="Terrace Waterproofing"
+                class="card-img"
+              />
+            </div>
+            <div class="card-content">
+              <h4>Terrace Waterproofing with PU Coating</h4>
+              <div class="divider-line"></div>
+              <p>
+                Terraces are constantly exposed to harsh weather conditions,
+                making waterproofing crucial to avoid seepage and structural
+                damage. PU coatings provide seamless protection, flexibility,
+                and excellent resistance to UV and thermal variations.
+              </p>
+            </div>
+          </div>
+
+          <div class="image-grid-card">
+            <div class="img-card">
+              <img
+                src="./assets/watertank.jpeg"
+                alt="Water Tank Waterproofing"
+                class="card-img"
+              />
+            </div>
+            <div class="card-content">
+              <h4>Water Tank Waterproofing</h4>
+              <div class="divider-line"></div>
+              <p>
+                Water tanks require reliable, long-lasting waterproofing to
+                prevent leaks, protect structural integrity, and maintain water
+                quality. Effective waterproofing also ensures hygiene by
+                preventing contamination and microbial growth in potable water
+                storage.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container my-5 feature-section" id="about-section">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4">
+          <div class="feature-box" id="why-us">
+            <h2 class="feature-title">Why Us?</h2>
+            <p>
+              With over 10 years of experience in the waterproofing industry, we
+              specialize in delivering reliable, long-lasting solutions tailored
+              to each project's unique needs. Our team uses high-quality
+              materials and advanced application techniques to ensure maximum
+              protection and durability. From accurate site assessment to timely
+              completion, we focus on precision, efficiency, and customer
+              satisfaction. Backed by skilled professionals and strong
+              after-service support, we've earned the trust of clients across
+              residential, commercial, and industrial sectors.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 mb-4">
+          <div class="feature-box" id="client-satisfaction">
+            <h2 class="feature-title">Client Satisfaction</h2>
+            <p>
+              We take pride in understanding our clients' specific needs and
+              delivering waterproofing solutions that not only solve problems
+              but also add long-term value. Our commitment to quality,
+              transparency, and timely execution ensures a smooth and
+              stress-free experience. With consistent communication, attention
+              to detail, and reliable after-service support, we've built strong
+              relationships and earned the trust of clients across residential,
+              commercial, and industrial sectors.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light our-clients-section" id="clients-section">
+      <div class="container text-center">
+        <div class="services-heading mb-4">
+          <h2>Our Clients</h2>
+        </div>
+        <p class="mb-5 text-muted px-md-5 animate__animated animate__fadeInUp">
+          We take pride in partnering with a diverse clientele across
+          residential, commercial, and industrial sectors. Each project reflects
+          our commitment to <strong>quality</strong> and long-term waterproofing
+          solutions. Here are some of the esteemed clients we've had the
+          opportunity to work with:
+        </p>
+
+        <div class="row justify-content-center g-4">
+          <!-- Client Logos -->
+          <div
+            class="col-6 col-md-4 col-lg-3 animate__animated animate__zoomIn"
+          >
+            <div
+              class="client-logo-card p-3 bg-white rounded shadow-sm h-100 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="assets/Kirloskar.avif"
+                class="img-fluid"
+                alt="Kirloskar"
+              />
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-3 animate__animated animate__zoomIn animate__delay-1s"
+          >
+            <div
+              class="client-logo-card p-3 bg-white rounded shadow-sm h-100 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="assets/PsDevelopers.jpg"
+                class="img-fluid"
+                alt="PS Developers"
+              />
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-3 animate__animated animate__zoomIn animate__delay-2s"
+          >
+            <div
+              class="client-logo-card p-3 bg-white rounded shadow-sm h-100 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="assets/sbpatil.jpg"
+                class="img-fluid"
+                alt="SB Patil Group"
+              />
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-3 animate__animated animate__zoomIn animate__delay-3s"
+          >
+            <div
+              class="client-logo-card p-3 bg-white rounded shadow-sm h-100 d-flex align-items-center justify-content-center"
+            >
+              <img src="assets/bosch.jpg" class="img-fluid" alt="Bosch" />
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 col-lg-3 animate__animated animate__zoomIn animate__delay-4s"
+          >
+            <div
+              class="client-logo-card p-3 bg-white rounded shadow-sm h-100 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="assets/pinnac.jpg"
+                class="img-fluid"
+                alt="Pinnac Group"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="partners-section">
+      <div class="services-heading">
+        <h2>Our Partners</h2>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 mb-3">
+            <div class="card">
+              <img
+                src="./assets/drfixit.jpg"
+                class="card-img-top"
+                alt="Client 1"
+              />
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-3">
+            <div class="card">
+              <img
+                src="./assets/myk_schomburg_india_private_limited_logo.jpg"
+                class="card-img-top"
+                alt="Client 2"
+              />
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-3">
+            <div class="card">
+              <img
+                src="./assets/kemper-system-logo-vector.png"
+                class="card-img-top"
+                alt="Client 3"
+              />
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-3">
+            <div class="card">
+              <img
+                src="./assets/sika.png"
+                class="card-img-top"
+                alt="Client 4"
+              />
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-3">
+            <div class="card">
+              <img
+                src="./assets/forsroc.png"
+                class="card-img-top"
+                alt="Client 1"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="counter-section mt-5">
+      <div class="counter-container">
+        <div class="counter" data-target="150">0</div>
+        <div class="counter-label">Happy Customers</div>
+      </div>
+      <div class="counter-container">
+        <div class="counter" data-target="50">0</div>
+        <div class="counter-label">Projects Served</div>
+      </div>
+      <div class="counter-container">
+        <div class="counter" data-target="20">0</div>
+        <div class="counter-label">Years of Experience</div>
+      </div>
+      <div class="counter-container">
+        <div class="counter" data-target="25">0</div>
+        <div class="counter-label">Industrial Projects</div>
+      </div>
+    </section>
+    <!-- Gallery Section -->
+    <section class="py-5 bg-white photo-gallery" id="gallery-section">
+      <div class="container">
+        <div class="services-heading text-center">
+          <h2 class="">Gallery</h2>
+        </div>
+
+        <div class="row g-3 mt-4">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="gallery-img-wrapper">
+              <img
+                src="https://picsum.photos/200/300?random=1"
+                class="img-fluid rounded shadow-sm gallery-img"
+                alt="Gallery Image 1"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="gallery-img-wrapper">
+              <img
+                src="https://picsum.photos/200/300?random=2"
+                class="img-fluid rounded shadow-sm gallery-img"
+                alt="Gallery Image 2"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="gallery-img-wrapper">
+              <img
+                src="https://picsum.photos/200/300?random=3"
+                class="img-fluid rounded shadow-sm gallery-img"
+                alt="Gallery Image 3"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="gallery-img-wrapper">
+              <img
+                src="https://picsum.photos/200/300?random=4"
+                class="img-fluid rounded shadow-sm gallery-img"
+                alt="Gallery Image 4"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="gallery-img-wrapper">
+              <img
+                src="https://picsum.photos/200/300?random=5"
+                class="img-fluid rounded shadow-sm gallery-img"
+                alt="Gallery Image 5"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="gallery-img-wrapper">
+              <img
+                src="https://picsum.photos/200/300?random=6"
+                class="img-fluid rounded shadow-sm gallery-img"
+                alt="Gallery Image 6"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="gallery-img-wrapper">
+              <img
+                src="https://picsum.photos/200/300?random=7"
+                class="img-fluid rounded shadow-sm gallery-img"
+                alt="Gallery Image 7"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="gallery-img-wrapper">
+              <img
+                src="https://picsum.photos/200/300?random=8"
+                class="img-fluid rounded shadow-sm gallery-img"
+                alt="Gallery Image 8"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="contact-section">
+      <div class="contact-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h6 class="text-uppercase">Try Our Service</h6>
+              <h2 class="font-weight-bold">Drop Us a Line</h2>
+              <p>
+                We're very approachable and would love to speak to you. Feel
+                free to call, send us an email, or simply complete the enquiry
+                form.
+              </p>
+
+              <form id="contactForm">
+                <div class="form-row d-flex gap-4 mb-4">
+                  <div class="form-group col-md-6">
                     <input
                       type="text"
                       class="form-control"
-                      id="fullName"
-                      placeholder="Enter your full name"
+                      id="name"
+                      placeholder="Your Name *"
+                      required
                     />
                   </div>
-                  <div class="mb-3">
-                    <label for="email" class="form-label">
-                      Active Email*
-                    </label>
+                  <div class="form-group col-md-6">
                     <input
                       type="email"
                       class="form-control"
                       id="email"
-                      placeholder="Enter your email"
+                      placeholder="Email Address *"
+                      required
                     />
                   </div>
-                  <div class="mb-3">
-                    <label for="phone" class="form-label">
-                      Phone Number*
-                    </label>
+                </div>
+                <div class="form-row d-flex gap-4 mb-4">
+                  <div class="form-group col-md-6">
                     <input
-                      type="tel"
+                      type="text"
                       class="form-control"
                       id="phone"
-                      placeholder="Enter your phone number"
+                      placeholder="Phone Number *"
+                      required
                     />
                   </div>
-                  <div class="mb-3">
-                    <label for="subject" class="form-label"> Subject* </label>
+                  <div class="form-group col-md-6">
                     <input
                       type="text"
                       class="form-control"
                       id="subject"
-                      placeholder="Enter your subject"
+                      placeholder="Subject (optional)"
                     />
                   </div>
-                  <div class="mb-3">
-                    <label for="message" class="form-label"> Message* </label>
-                    <textarea
-                      class="form-control"
-                      id="message"
-                      rows="3"
-                      placeholder="Enter your message"
-                    ></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-primary">
-                    Send Request
-                  </button>
-                </form>
-              </div>
+                </div>
+                <div class="form-group mb-4">
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="4"
+                    placeholder="Write your message..."
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Request Estimate
+                </button>
+              </form>
             </div>
           </div>
         </div>
-      </section>
-
-     <section class="services-section" id="our-services">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-4 service-box">
-        <div class="service-content">
-          <h3>01.</h3>
-          <h4>Waterproofing Solutions</h4>
-          <p>
-            Revitalize your space with our PU, Acrylic, Polymer, two components
-            base coating, HDPE, APP, SBS membrane services.
-          </p>
-        </div>
       </div>
-      <div class="col-md-4 service-box">
-        <div class="service-content">
-          <h3>02.</h3>
-          <h4>Painting & Coatings</h4>
-          <p>
-            Shield your structures with our advanced Epoxy, decorative, car
-            parking/flooring systems, painting for long-lasting protection.
-          </p>
-        </div>
+    </section> -->
+
+    <section class="footer bg-light">
+      <div class="container">
+        <footer class="py-5">
+          <div class="row">
+            <!-- First Column -->
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-secondary">Home</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-secondary">Features</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-secondary">Pricing</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-secondary">FAQs</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-secondary">About</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Second Column -->
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-secondary">Home</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-secondary">Features</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-secondary">Pricing</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-secondary">FAQs</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-secondary">About</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Third Column -->
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-secondary">Home</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-secondary">Features</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-secondary">Pricing</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-secondary">FAQs</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-secondary">About</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Subscribe Form -->
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p class="text-secondary">
+                  Monthly digest of what's new and exciting from us.
+                </p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden"
+                    >Email address</label
+                  >
+                  <input
+                    id="newsletter1"
+                    type="email"
+                    class="form-control"
+                    placeholder="Email address"
+                  />
+                  <button class="btn btn-primary" type="button">
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Footer Bottom Section -->
+          <div
+            class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+          >
+            <p class="mb-0">© 2024 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex mb-0">
+              <li class="ms-3">
+                <a class="link-secondary" href="#">
+                  <svg class="bi" width="24" height="24">
+                    <use xlink:href="#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a class="link-secondary" href="#">
+                  <svg class="bi" width="24" height="24">
+                    <use xlink:href="#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a class="link-secondary" href="#">
+                  <svg class="bi" width="24" height="24">
+                    <use xlink:href="#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
       </div>
-      <div class="col-md-4 service-box">
-        <div class="service-content">
-          <h3>03.</h3>
-          <h4>Traditional Waterproofing</h4>
-          <p>
-            Keep water damage at bay with BrickBat coba, IPS, Screed, BaseCoat,
-            Shahabad waterproofing, Socketing & Grouting.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-            <section class="counter-section">
-  <div class="counter-container">
-    <div class="counter" data-target="300">0</div>
-    <div class="counter-label">Happy Customers</div>
-  </div>
-  <div class="counter-container">
-    <div class="counter" data-target="50">0</div>
-    <div class="counter-label">Commercial & Residential Projects</div>
-  </div>
-  <div class="counter-container">
-    <div class="counter" data-target="100000">0</div>
-    <div class="counter-label">Total Sq.ft.</div>
-  </div>
-  <div class="counter-container">
-    <div class="counter" data-target="25">0</div>
-    <div class="counter-label">Industrial Projects</div>
-  </div>
-</section>
-
-    <section id="partners">
-        <div class="partners-section">
-    <div class="container">
-        <h2>Our Trusted Partners</h2>
-        <div class="row justify-content-center">
-            <div class="col-6 col-md-3">
-                <div class="partner-logo">
-                    <img src="./assets/Alch.png" alt="Alchimica">
-                </div>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="partner-logo">
-                    <img src="./assets/Zydex.png" alt="Zydex">
-                </div>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="partner-logo">
-                    <img src="./assets/birla.png" alt="Birla White">
-                </div>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="partner-logo">
-                    <img src="./assets/kemper-removebg-preview.png" alt="Kemper System">
-                </div>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="partner-logo">
-                    <img src="./assets/DrFixit.jpg" alt="Dr. Fixit">
-                </div>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="partner-logo">
-                    <img src="./assets/maris.png" alt="Maris Polymers">
-                </div>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="partner-logo">
-                    <img src="./assets/ap-removebg-preview.png" alt="Asian Paints">
-                </div>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="partner-logo">
-                    <img src="./assets/sika.png" alt="Sika">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
     </section>
 
-      <section class="why-choose-us-section" id="whyUs">
-        <div class="container">
-          <h2 class="section-title">Why Choose Us</h2>
-          <p class="section-description">
-            At Tirumala Services, we believe that quality and reliability are key to lasting solutions. From the initial inspection to project completion, we work closely with you to deliver customized waterproofing and coating services that meet your exact needs, ensuring every job is completed with precision and care.
-          </p>
-          <div class="why-choose-grid">
-            <div class="choose-card">
-              <div class="icon">
-                <i class="fas fa-trophy"></i>
-              </div>
-              <h3>Commitment to Quality</h3>
-              <p>
-                From materials selection to craftsmanship, we prioritize
-                excellence in every aspect of the construction process to ensure
-                the best service to our customer.
-              </p>
-            </div>
+    <!-- Bootstrap JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
-            <div class="choose-card">
-              <div class="icon">
-                <i class="fas fa-briefcase"></i>
-              </div>
-              <h3>Experience and Expertise</h3>
-              <p>
-                Our seasoned team of professionals has the knowledge and skills
-                needed to tackle the most complex construction challenges.
-              </p>
-            </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        try {
+          emailjs.init("2RGHyZA_tcmgkYbGg"); // Your Public Key
+        } catch (e) {
+          console.error("Error initializing EmailJS: ", e);
+          alert("Could not initialize email service.");
+          return;
+        }
 
-            <div class="choose-card">
-              <div class="icon">
-                <i class="fas fa-tools"></i>
-              </div>
-              <h3>Tailored Solutions for You</h3>
-              <p>
-                We understand that every project is unique, which is why we take
-                a personalized approach to construction.
-              </p>
-            </div>
+        const contactForm = document.getElementById("contact-form"); // Correct form ID
 
-            <div class="choose-card">
-              <div class="icon">
-                <i class="fas fa-gem"></i>
-              </div>
-              <h3>Attention to Detail</h3>
-              <p>
-                Our meticulous attention to detail ensures that every aspect of
-                your project is executed flawlessly.
-              </p>
-            </div>
+        if (contactForm) {
+          contactForm.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent default form submission
 
-            <div class="choose-card">
-              <div class="icon">
-                <i class="fas fa-handshake"></i>
-              </div>
-              <h3>Customer Satisfaction</h3>
-              <p>
-                We go above and beyond to ensure you're happy with the final
-                outcome of your project.
-              </p>
-            </div>
+            // Gather form data using correct input IDs
+            const formData = {
+              name: document.getElementById("exampleInputName").value,
+              email: document.getElementById("exampleInputEmail1").value,
+              phone: document.getElementById("exampleInputPhone").value,
+              subject: document.getElementById("exampleInputSubject").value,
+              message: document.getElementById("exampleTextarea").value,
+            };
 
-            <div class="choose-card">
-              <div class="icon">
-                <i class="fas fa-tags"></i>
-              </div>
-              <h3>Value for Money</h3>
-              <p>
-                When you choose us, you're not just getting quality construction
-                services—you're getting exceptional value for your investment.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+            // Show a temporary sending message (optional)
+            const submitButton = contactForm.querySelector(
+              'button[type="submit"]'
+            );
+            const originalButtonText = submitButton.innerHTML;
+            submitButton.disabled = true;
+            submitButton.innerHTML = "Sending...";
 
-
-
-
-      <section class="estimate" id="get-a-estimate">
-          <h2>Need A Free Estimate?</h2>
-          <p>
-            Have any questions? We are always open to talk about new projects,
-            creative opportunities, and how we can help you.
-          </p>
-          <a href="#" class="btn btn-custom btn-lg">Get a Free Estimate</a>
-          <a href="#" class="btn btn-outline-light btn-lg ml-3">Call Us Now</a>
-        </div>
-      </section>
-
-      <section class="footer">
-        <div id="contact-us" class="contact-footer">
-          <div class="contact-info">
-            <div class="department" id="domestic-department">
-              <h3>Enquiry</h3>
-              <p><strong>Phone</strong><br />+91 86000 03819</p>
-              <p><strong>Email</strong><br />tirumalaservices@gmail.com</p>
-            </div>
-           
-            <div class="department" id="office-contact">
-              <h3>Office</h3>
-              <p>
-                <strong>Address</strong><br />Sr no 14/15, Chavan-nagar, Near
-                Shankar Maharaj Math, Pune-Satara road<br />Pune - 411043,
-                Maharashtra, India
-              </p>
-            </div>
-          </div>
-          <div class="footer">
-            <div class="footer-section" id="about">
-              <img src="./assets/logoo.jpg" alt="logo" class="footer-logo"/>
-              <p>
-                    your trusted partner in waterproofing and coating solutions. We specialize in revitalizing spaces with advanced waterproofing techniques, including PU, acrylic, polymer coatings, and HDPE, APP, and SBS membranes. We also offer traditional waterproofing solutions to safeguard your structures for years to come.            
-
-              </p>
-            </div>
-            <div class="footer-section" id="map">
-              <h3>Google Map</h3>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.333387435992!2d73.8527161!3d18.468552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eab0851b0949%3A0xfe2ceb6b17f9f64a!2sHatti%20Chowk%2C%20Pune%2C%20Maharashtra%20411043!5e0!3m2!1sen!2sin!4v1719489160675!5m2!1sen!2sin"
-                width="600"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-            <div class="footer-section" id="download">
-    <h3>Download</h3>
-    <p>
-        Just enter your email id and you will get our complete brochure on your email.
-    </p>
-    <input type="email" placeholder="Email Address..." id="email" required />
-    <button onclick="sendEmail()">Send</button>
-    <p id="responseMessage"></p>
-</div>
-
-<!-- Include EmailJS SDK -->
-
-          </div>
-        </div>
-      </section>
-    </main>
-    
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            // Send data to EmailJS
+            emailjs.send("service_qgp03tm", "template_00s4fqm", formData).then(
+              function (response) {
+                console.log("Sent successfully:", response);
+                alert(
+                  "Thank you for your message! We will get back to you soon."
+                );
+                contactForm.reset(); // Reset form after successful submission
+                submitButton.disabled = false; // Re-enable button
+                submitButton.innerHTML = originalButtonText; // Restore button text
+              },
+              function (error) {
+                console.error("Failed to send:", error);
+                alert("Oops! Something went wrong. Please try again later.");
+                submitButton.disabled = false; // Re-enable button on error
+                submitButton.innerHTML = originalButtonText; // Restore button text
+              }
+            );
+          });
+        } else {
+          console.error("Contact form with ID 'contact-form' not found.");
+        }
+      }); // End DOMContentLoaded
+    </script>
+    <!-- Custom JS -->
+    <script src="./js/script.js"></script>
   </body>
 </html>

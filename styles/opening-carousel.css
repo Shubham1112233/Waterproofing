@@ -1,0 +1,126 @@
+.carousel-image-item,
+#carouselExampleAutoplaying {
+  position: relative;
+  height: 100vh;
+}
+
+.navbar-collapse {
+  justify-content: space-between;
+}
+
+.carousel-overlay {
+  position: absolute;
+  top: 25%;
+  left: 70%;
+  transform: translate(-50%, 0);
+  width: 50%;
+  height: auto;
+  z-index: 2;
+}
+
+.innertext-carousel {
+  color: white;
+  max-width: 90%;
+}
+
+.white-border {
+  border: 1px solid white;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.carousel-buttons {
+  gap: 30px;
+}
+
+.carousel-buttons .btn-primary {
+  width: auto;
+  min-height: 40px;
+  height: auto;
+}
+
+/* Responsive adjustments for overlay and text on smaller screens */
+@media (max-width: 991.98px) {
+  .carousel-overlay {
+    top: 15%;
+  }
+  .innertext-carousel h1 {
+    font-size: 1.8rem; /* Further reduced H1 size */
+  }
+  .innertext-carousel h2 {
+    font-size: 1.15rem; /* Further reduced H2 size */
+  }
+  .innertext-carousel h5 {
+    font-size: 0.8rem; /* Further reduced H5 size */
+  }
+}
+/* Use background images for carousel items on smaller screens */
+@media (max-width: 767.98px) {
+  /* Set height for mobile */
+  #carouselExampleAutoplaying,
+  .carousel-item {
+    height: 100vh;
+  }
+
+  /* Hide the desktop image tags */
+  .carousel-item img.carousel-image-item {
+    display: none !important;
+  }
+
+  /* Apply background image to carousel items */
+  .carousel-item {
+    background-image: url("../assets/red-chair-mob.png"); /* Default for item 1 */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  /* Override background for the second item */
+  .carousel-item:nth-child(2) {
+    background-image: url("../assets/basement.jpeg");
+  }
+
+  #Navigation-bar {
+    background-color: white !important;
+  }
+
+  #Navigation-bar a {
+    color: black !important;
+  }
+
+  #Navigation-bar .navbar-brand {
+    color: black !important;
+  }
+
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel-buttons .btn-primary {
+    min-height: 20px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .innertext-carousel h1 {
+    font-size: 1.4rem; /* Further reduced H1 size */
+  }
+  .innertext-carousel h2 {
+    font-size: 1rem; /* Further reduced H2 size */
+  }
+  .innertext-carousel h5 {
+    font-size: 1rem; /* Further reduced H5 size */
+  }
+
+  .innertext-carousel p {
+    font-size: 0.8rem; /* Further reduced H5 size */
+  }
+}

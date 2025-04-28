@@ -1,0 +1,107 @@
+.feature-box {
+  background-color: #ffffff;
+  /* White background for the feature boxes */
+  border: 1px solid #ddd;
+  /* Light border for separation */
+  border-radius: 8px;
+  /* Rounded corners */
+  padding: 20px;
+  /* Padding inside the boxes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 400px;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  /* Slight lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Enhanced shadow on hover */
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  /* Larger title font */
+  margin-bottom: 15px;
+  /* Spacing below the title */
+  color: #333;
+  /* Darker color for the title */
+}
+
+@media (min-width: 992px) {
+
+  /* Styles for large screens */
+  .feature-box {
+    padding: 30px;
+    /* More padding on larger screens */
+  }
+}
+
+/* Section background with a subtle gradient */
+.feature-section {
+  background: linear-gradient(135deg, #e0f7fa, #f0f8ff);
+  /* Soft blue gradient */
+  padding: 50px;
+  border-radius: 10px;
+}
+
+/* Feature box with fresh, vibrant colors */
+#why-us {
+  background: linear-gradient(135deg, #ffeb3b, #ffc107);
+  /* Bright yellow gradient */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+#client-satisfaction {
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  /* Fresh green gradient */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animation keyframes for smooth fade-in */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover effects: animate scaling, background color, and box shadow */
+.feature-box:hover {
+  transform: scale(1.05);
+  /* Slight scaling effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Stronger shadow */
+}
+
+/* Hover-specific color change for #why-us */
+#why-us:hover {
+  background: linear-gradient(135deg, #ffe082, #ffca28);
+  /* Lighter yellow gradient on hover */
+}
+
+/* Hover-specific color change for #client-satisfaction */
+#client-satisfaction:hover {
+  background: linear-gradient(135deg, #66bb6a, #a5d6a7);
+  /* Lighter green gradient on hover */
+}
+
+/* Ensure responsive text alignment for mobile screens */
+@media (max-width: 768px) {
+  .feature-box {
+    text-align: center;
+  }
+}

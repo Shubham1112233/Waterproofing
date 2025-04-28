@@ -1,45 +1,76 @@
-.estimate {
-  height: 400px; /* Fixed height of 400px */
-  background-color: #0a1a2b; /* Optional: Set background color */
-  color: #ffffff; /* Text color */
-  display: flex; /* Use Flexbox for centering */
-  flex-direction: column; /* Align items in a column */
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
-  text-align: center; /* Center text */
-  padding: 0 20px; /* Optional: Add some padding */
+.estimate .container {
+  padding: 40px;
 }
 
-.estimate h2 {
-  font-size: 36px; /* Font size for heading */
-  margin-bottom: 15px; /* Space below the heading */
+.estimate .col-lg-6 {
+  padding: 20px;
 }
 
-.estimate p {
-  font-size: 18px; /* Font size for paragraph */
-  margin-bottom: 20px; /* Space below the paragraph */
+.whatsapp {
+  gap: 12px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  padding: 8px 12px;
+  background-color: #f8f9fa;
+  border-radius: 30px;
+  width: fit-content;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-custom {
-  background-color: #d9534f; /* Button background color */
-  color: #ffffff; /* Button text color */
-  border: none; /* Remove border */
-  padding: 10px 20px; /* Button padding */
-  margin: 5px; /* Space between buttons */
+.contact-icons {
+  display: flex;
+  align-items: center;
 }
 
-.btn-custom:hover {
-  background-color: #c9302c; /* Button hover color */
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.btn-outline-light {
-  border: 2px solid #ffffff; /* Button border */
-  color: #ffffff; /* Button text color */
-  padding: 10px 20px; /* Button padding */
-  margin: 5px; /* Space between buttons */
+.icon-container a {
+  color: #25d366;
+  transition: transform 0.3s ease;
+  display: flex;
 }
 
-.btn-outline-light:hover {
-  background-color: #ffffff; /* Button hover background color */
-  color: #0a1a2b; /* Button hover text color */
+.icon-container a:hover {
+  transform: scale(1.2);
+}
+
+.contact-number a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 991px) {
+  .inline-left {
+    opacity: 0;
+    transform: translate3d(-100px, 0, 0);
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+  }
+
+  .inline-right {
+    opacity: 0;
+    transform: translate3d(100px, 0px, 0px) rotateZ(0deg);
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+  }
+
+  .inline-left.is-visible,
+  .inline-right.is-visible {
+    opacity: 1;
+    transform: translate3d(0px, 0, 0);
+    will-change: auto; /* Reset after animation */
+  }
+}
+
+.col-6-feedback {
+  background-color: rgb(211, 211, 211);
+}
+
+.form-feedback {
+  width: 50%;
 }

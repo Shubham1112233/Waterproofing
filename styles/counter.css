@@ -1,0 +1,33 @@
+.counter-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* Allows items to wrap to the next line if needed */
+  gap: 20px;
+  /* Space between items */
+  padding: 20px;
+  background-color: #f9f9f9;
+  /* Light background color for contrast */
+  border-radius: 8px;
+  /* Rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+}
+
+.counter-container {
+  text-align: center;
+  flex: 1 1 200px;
+  /* Allows items to grow and shrink, with a base width of 200px */
+}
+
+.counter {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+}
+
+.counter-label {
+  font-size: 18px;
+  color: #666;
+}
